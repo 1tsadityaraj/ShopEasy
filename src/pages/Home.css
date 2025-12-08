@@ -1,0 +1,274 @@
+.home {
+  min-height: calc(100vh - 80px);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  min-height: 600px;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1.1;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 32px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Features Section */
+.features {
+  padding: 80px 0;
+  background: white;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 60px;
+  color: #1f2937;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.feature {
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-8px);
+}
+
+.feature-icon {
+  color: #3b82f6;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #1f2937;
+}
+
+.feature p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* Featured Products */
+.featured-products {
+  padding: 80px 0;
+  background-color: #f8fafc;
+}
+
+.featured-products h2 {
+  text-align: center;
+  margin-bottom: 60px;
+  color: #1f2937;
+}
+
+/* Categories */
+.categories {
+  padding: 80px 0;
+  background: white;
+}
+
+.categories h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #1f2937;
+}
+
+.category-filters {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.category-btn {
+  padding: 12px 24px;
+  border: 2px solid #e5e7eb;
+  background: white;
+  border-radius: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #374151;
+}
+
+.category-btn:hover {
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
+.category-btn.active {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+  color: white;
+}
+
+/* Newsletter */
+.newsletter {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+  color: white;
+}
+
+.newsletter-content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.newsletter h2 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.newsletter p {
+  font-size: 1.125rem;
+  margin-bottom: 32px;
+  opacity: 0.9;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 12px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: white;
+  color: #1f2937;
+}
+
+.newsletter-form input::placeholder {
+  color: #9ca3af;
+}
+
+.newsletter-form button {
+  padding: 16px 24px;
+  white-space: nowrap;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.125rem;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+  
+  .features-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+  }
+  
+  .feature {
+    padding: 30px 15px;
+  }
+  
+  .category-filters {
+    gap: 12px;
+  }
+  
+  .category-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .newsletter h2 {
+    font-size: 2rem;
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 60px 0;
+    min-height: 500px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .features, .featured-products, .categories, .newsletter {
+    padding: 60px 0;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
